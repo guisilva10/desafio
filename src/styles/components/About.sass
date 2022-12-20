@@ -65,8 +65,21 @@
 
           img
               border-radius: 10px
-              margin: 1rem 0
+              margin: 2rem 0
               transform: scale(100%)
+              transform: translateY(0px)
+              animation: float 5s ease-in-out infinite
+
+              @keyframes float
+               0%
+                 transform: translateY(0px)
+               50%
+                 transform: translateY(-15px)
+
+               100%
+                 transform: translateY(0px)
+      
+               
               
 
               @media(max-width: 768px)
