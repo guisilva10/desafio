@@ -1,0 +1,33 @@
+@use '../variables'
+
+footer
+      padding: 2rem 0
+      background-color: variables.$bg-secondary
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      gap: 1rem
+
+      @media(max-width: 425px)
+          padding: 1rem
+
+      .tell
+          color: variables.$secondary-color
+          font-size: 2rem
+          font-weight: bold
+
+          @media(max-width: 425px)
+              font-size: 1.3rem
+
+
+
+      .copyright
+          font-size: 3rem
+          font-family: variables.$font-stack
+
+          span
+            color: variables.$bg-color
+
+          @media(max-width: 425px)
+              font-size: 1.8rem
